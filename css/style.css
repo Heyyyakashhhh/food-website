@@ -1,0 +1,88 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --navbar-height: 49px;
+}
+
+#navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.9;
+}
+#navbar ul li{
+
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 4px 22px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    padding: 2px 200px;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+}
+#home::before{
+    content: "";
+    background:url(../images/italian-cuisine-2378729_1920.jpg) no-repeat center/cover;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.90;
+}
+.h-primary{
+    font-size: 3rem;
+    font-family: 'Lobster', cursive;
+    color:white;
+}
+.btn{
+    margin: 70px;
+    padding: 5px 30px 5px 30px;
+    border-radius: 1rem;
+    border: 2px solid;
+    cursor: pointer;
+    background-color: transparent;
+
+}
+
+.pera{
+    font-size: 25px;
+}
