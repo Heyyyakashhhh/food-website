@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Delicius treat</title>
+    <link rel="shortcut icon" href="images/burger.png" type="image/x-icon">
+    <link rel="stylesheet" media="screen and (max-width: 993px)" href="css/phone.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav id="navbar">
@@ -16,27 +18,87 @@
         <img src="images/logo.png" alt="logo" width="60px" > 
     </div>
     <ul>
-        <li class="item"><a href="#">Home</a></li>
-        <li class="item"><a href="#">Services</a></li>
-        <li class="item"><a href="#">Contact us</a></li>
-        <li class="item"><a href="#">About us</a></li>
+        <li class="item"><a href="#Home">Home</a></li>
+        <li class="item"><a href="#services">Services</a></li>
+        <li class="item"><a href="#contact">Contact us</a></li>
+        <li class="item"><a href="#clients-section">Our client</a></li>
+      
     </ul>
     </nav>
     <section id="home">
         <h1 class="h-primary">Welcome to delicious Treat</h1>
-        <p class="pera"> <strong>Keep calm!! its food time </strong></p>
+        <p > <strong>Keep calm!! its food time </strong></p>
        
         <button class="btn">Order now</button>
     </section>
     <section class="center">
         <h1 class="h-primary-cen">Our services</h1>
         <div id="services">
-            <div id="box">
-                <img src="" alt="">
+            <div class="box">
+                <img src="images/dlf.pt-pizza-png-images-869124.png" alt="">
+                <h2 class="h-secondary-cen">Food centering</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ipsam, ipsa obcaecati aliquid deleniti temporibus </p>
             </div>
-            <h2 class="h-secondary-cen">Food ordering</h2>
-            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ipsam, ipsa obcaecati aliquid deleniti temporibus repudiandae ea est eveniet exercitationem! Repudiandae harum ab aliquam laboriosam enim. Ipsum aliquam hic commodi!</p>
+            <div class="box">
+                <img src="images/man.png" alt="">
+                <h2 class="h-secondary-cen">Delivery</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ipsam, ipsa obcaecati aliquid deleniti temporibus </p>
+            </div>
+            <div class="box">
+                <img src="images/food plate.png" alt=" ">
+                <h2 class="h-secondary-cen">Bulk orderS</h2>
+                <p class="text-center">Lorem ipsum door sit amet consectetur adipisicing elit. Incidunt ipsam, ipsa obcaecati aliquid deleniti temporibus </p>
+            </div>
         </div>
     </section>
+
+    <section id="clients-section">
+        <h1 class="h-primary-cen">Our clients</h1>
+       <div id="client">
+        <div class="client-items">
+            <img src="images/apple.png" alt="">
+        </div>
+        <div class="client-items">
+            <img src="images/xiaomi.png" alt="">
+        </div>
+        <div class="client-items">
+            <img src="images/hp.png" alt="">
+        </div>
+        <div class="client-items">
+            <img src="images/microsoft.png" alt="">
+        </div>
+       </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary-cen">Contact us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="Name">Name: </label>
+                    <input type="text" class="name" id="Name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="Name">Email: </label>
+                    <input type="text" class="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="Name">phone number: </label>
+                    <input type="text" class="name" id="Number" placeholder="Enter your phone number">
+                </div>
+                <div lass="form-group">
+                <label for="message">Meassege: </label>
+                <textarea name="message" id="Message" cols="30" rows="10"></textarea>
+                </div>
+         
+            </form>
+        </div>
+
+    </section>
+    <footer>
+        <div class="cent">
+            Copyright &copy;www.deliciustreat.com All right reserved.
+        </div>
+    </footer>
 </body>
 </html>

@@ -6,23 +6,16 @@
 }
 
 :root{
-    --navbar-height: 49px;
+    --navbar-height: 20px;
 }
 
 #navbar{
-    position: relative;
     display: flex;
     align-items: center;
-}
-#logo{
-    margin: 10px 34px;
-}
-#logo img{
-    height: 59px;
-    margin: 3px 6px;
-}
-#navbar ul{
-    display: flex;
+   
+    position:sticky;
+    width: 100%;
+    top: 0px;
 }
 #navbar::before{
     content: "";
@@ -31,10 +24,24 @@
     width: 100%;
     position: absolute;
     z-index: -1;
-    opacity: 0.9;
+    opacity: 0.7;
+}
+
+
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    height: 50px;
+    margin: 3px 6px;
+}
+
+
+#navbar ul{
+    display: flex;
 }
 #navbar ul li{
-
+    
     list-style: none;
     font-size: 1.2rem;
 }
@@ -42,47 +49,205 @@
 #navbar ul li a{
     color: white;
     display: block;
-    padding: 4px 22px;
-    text-decoration: none;
+    padding: 3px 22px;
     border-radius: 20px;
+    text-decoration: none;
 }
 #navbar ul li a:hover{
     color: black;
     background-color: white;
 }
+
 #home{
     display: flex;
     flex-direction: column;
-    height: 300px;
-    padding: 2px 200px;
+    padding:3px 200px;
+    height: 550px;
     justify-content: center;
     align-items: center;
-    line-height: 2;
 }
 #home::before{
     content: "";
     background:url(../images/italian-cuisine-2378729_1920.jpg) no-repeat center/cover;
-    height:100%;
+    top: 0;
+    left: 0;
+    height:642px;
     width: 100%;
     position: absolute;
     z-index: -1;
-    opacity: 0.90;
+    opacity: 0.89;
+}
+#home p{
+   text-align: center;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    font-size:1.3rem ;
+    
 }
 .h-primary{
     font-size: 3rem;
-    font-family: 'Lobster', cursive;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
     color:white;
+    text-align: center;
+
 }
+.h-primary-cen{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+}
+.h-secondary-cen{
+    font-size: 1.9rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+}
+.text-center{
+    text-align: center
+}
+
+
+
+#services{
+    display: flex;
+    margin: 34px;
+}
+#services .box{
+background-color: #f2f2f2;
+border: 2px solid red;
+margin: 2px 55px;
+border-radius: 28px;
+padding: 20px;
+margin-bottom: 20px;
+
+
+}
+#services .box img{
+    height: 120px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+
+
+
+#clients-section{
+    position: relative;
+    
+    
+}
+#clients-section::before{
+content: "";
+position: absolute;
+background: url(../images/food-3348861_1920.jpg) no-repeat center/cover;
+height: 100%;
+width: 100%;
+z-index: -1;
+opacity: 0.7;
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#client img{
+    height: 124px;
+    padding: 34px;
+}
+#client-items{
+    height: 34px;
+}
+
+
+
+
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url(../images/contact-us-4193637_1920.jpg) no-repeat center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact-box{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.9rem;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+    
+}
+#contact-box label{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3rem;
+}
+
+
+
+footer{
+    text-align: center;
+    height: 20px;
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+    opacity: 0.9;
+}
+
+
 .btn{
-    margin: 70px;
-    padding: 5px 30px 5px 30px;
-    border-radius: 1rem;
+    margin: 17px;
+    padding: 6px 34px;
+    border-radius: 10px;
     border: 2px solid;
     cursor: pointer;
+    color: white;
     background-color: transparent;
 
 }
 
-.pera{
-    font-size: 25px;
+#center{
+    text-align: center;
 }
+
+
+#button-submit{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+ 
+}
+.btn-submit{
+
+    width: 40%;
+    border-radius: 0.9rem;
+    padding: 9px 2px 9px 2px;
+   text-align: center;
+}
+.btn-submit:hover{
+    background-color: gray;
+}
+
